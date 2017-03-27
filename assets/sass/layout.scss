@@ -1,0 +1,112 @@
+@import "_imports";
+
+/*	LAYOUT
+	====== */
+
+html {
+	min-height: 100%;
+	/*	Ordinarily, the html element does not actually go to the end
+		of the browser window. If you apply a background-image or
+		inset box shadow to html, it will stop short of the end of
+		the window if there isn't enough content, as sometimes
+		is the situation on homepages.
+	
+		min-height: 100% ensures that the html element always touches
+		the end of the window no matter how much content there is.
+	*/
+}
+
+.noSidebar {
+	.u-lAside {
+		display: none;
+	}
+	.u-lContent {
+		width: 100%;
+	}
+}
+
+@media (min-width: $small) {
+	.u-lHeader {
+		float: left;
+		width: 30%;	
+	}
+	.u-lAside {
+		width: 50%;
+	}
+}
+@media (min-width: $medium) {
+	body {
+		padding-right: 2%;
+	}
+	.u-NavSite {
+		width: 27%;
+	}
+	.u-lContent {
+		width: 74%;
+		float: left;
+	}
+	.u-lAside {
+		width: 25%;
+		float: right;
+	}
+	.u-lMain {
+		width: 71%;
+		padding-top: 7em;
+	}
+	.u-lHeader {
+		width: 27%;
+	}
+	.u-Search {
+		z-index: 200;
+		top: 2em;
+		right: 2em;	
+    }
+}
+@media (min-width: $large) {
+	.u-lHeader {
+		width: 20%;
+	}
+	.u-biosInner .u-NavSite, .u-NavSite {
+		width: 20%;
+	}
+	.u-biosInner .u-lMain, .u-lMain {
+		width: 79%;
+	}
+	.u-Search {
+		top: 3em;
+		right: 4.7%;
+		width: 17.2%;
+	}
+	.u-pageInner {
+		.u-lMain {
+			/* margin-top: -4em; */
+		}
+		.u-pageHome {
+			.u-lMain:before {
+				top: 1px;
+				height: 1px;
+			}
+		}
+	}
+}
+
+
+/*	Bios
+	---- */
+
+
+
+/*	Navigation
+	---------- */
+
+.u-NavSite__level--1 .u-NavSite__item {
+	padding: .25em 0;
+}
+
+
+.u-pageHome {
+	.Module--contact {
+		display: none;
+	}
+}
+

@@ -1,0 +1,204 @@
+@import "_imports";
+
+
+/*	TYPOGRAPHY
+	========== */
+
+/* Elements */
+
+a {
+	padding-bottom: 0;
+}
+html {
+	font-family: $sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+	line-height: 1.1;
+	margin-bottom: 0.168em;
+	margin-top: 0;
+}
+h1 {
+	font-size: 2em;
+	font-weight: 100;
+}
+h2 {
+	font-size: 2.6em;
+	margin-top: 0;
+	position: relative;
+	margin-bottom: .5em;
+	font-weight: 200;
+	line-height: 1;
+}
+h3 {
+	font-size: 1.4em;
+	font-weight: normal;
+	margin-bottom: .5em;
+}
+h4 {
+	font-size: .9em;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: .1em;
+}
+h5 {
+	font-size: .9em;
+	font-weight: normal;
+	font-style: italic;
+}
+h6 {
+	font-size: .8em;
+}
+.u-lContent {
+	font-size: 1.1em;
+	font-family: $sans-serif;
+	font-weight: $fontWeightNormal;
+	line-height: 1.4;
+	margin-bottom: 1.25em;
+}
+
+ul,
+ol {
+	margin: .64em 0;
+}
+p {
+	margin-top: 0;
+	line-height: 1.45;
+}
+th {
+	font-weight: $fontWeightBold;
+}
+
+td {
+	font-weight: $fontWeightNormal;
+}
+
+li {
+	margin: 0 0 0.327em;
+}
+
+/* Main page content */
+
+.u-lMain {
+	font-size: 100%;
+}
+
+/* u-lAside sidebar styles */
+
+.u-lAside {
+
+	h1 {
+		font-size: 1.953em;
+	}
+
+	h2 {
+		font-size: 1.4em;
+		font-weight: normal;
+	}
+
+	h3 {
+		font-size: 1.25em;
+	}
+
+	h4 {
+		font-size: .9em;
+	}
+
+	h5 {
+		font-size: .9em;
+	}
+
+	p,
+	ol,
+	ul {
+		font-size: .95em;
+		line-height: 1.2;
+		font-weight: $fontWeightNormal;
+	}
+
+	ul,
+	ol {
+		margin-bottom: 0.64em;
+	}
+
+	li {
+		margin-bottom: 0.327em;
+		line-height: 1.2;
+	}
+	.Module {
+		.Module__header {
+			text-transform: uppercase;
+			letter-spacing: .2em;
+			margin-bottom: 1em;
+		}
+	}
+
+}
+
+
+/*	Bios
+	---- */
+
+.u-Bio__contactItemLabel {
+	font: 900 .75em lato;
+	text-transform: uppercase;
+	letter-spacing: .05em;
+}
+
+
+/*	News
+	---- */
+
+.u-ArticleListItem__title {
+	text-transform: none;
+	letter-spacing: normal;
+}
+
+
+/*	Masthead
+	-------- */	
+
+@media (min-width: $small) {
+	.u-Masthead__siteName--link {
+		font-weight: 900;
+		text-transform: uppercase;
+		font-size: 1.6em;
+	}
+	.u-Masthead__vassar--link b,
+	.u-Masthead__vassar--link:visited b {
+		color: #000;
+		display: block;
+		font-weight: bold;
+		margin-top: .7em;
+		text-transform: uppercase;
+	}
+	.u-Masthead__vassar--link:hover b,
+	.u-Masthead__vassar--link:visited:hover b {
+		color: #aaa;
+	}
+}
+.Module--filmStudents .u-Figure__caption {
+	font-size: 1.2em;
+	font-weight: 100;
+}
+
+.u-Masthead__siteName--link {
+	font-size: 2em;
+}
+
+.icon-youtube {
+	font-size: 1em;
+}
+
+@media (min-width: $large) {
+	.u-Masthead__siteName--link {
+		font-size: 2.2em;
+	}
+}
+
+
+
+
+.u-NavSite__item.icon-youtube {
+	font-size: 1em;
+}
+

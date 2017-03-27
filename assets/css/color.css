@@ -1,0 +1,387 @@
+/*	CONFIG
+	====== */
+/*	TYPOGRAPHY
+	========== */
+/*	LAYOUT
+	====== */
+/* Site breakpoints */
+/* 400px divided by 16px */
+/* 600px divided by 16px */
+/* 800px divided by 16px */
+/* 1000px divided by 16px */
+/* The padding on u-lHeader, u-lMain, u-lFooter, and u-NavSite. */
+/* COLOR
+	====== */
+/* Basic link colors - these colors also affect the Google Search result link colors */
+/* tint($linkColorVisited, 50%) or shade($linkColorVisited, 50%) can be used to lighten or darken hue */
+/* MODULES
+	======== */
+/* Bios */
+/* Breadcrumbs  */
+/* Footer */
+/* Images */
+/*	Google search results  */
+/* Currently being overridden by something in Google's default CSS */
+/* The numbers that represent pages of search results */
+/* Nav */
+/* level 3 covers Level 3 and up. */
+/* LATEST Modules basic */
+/* Use these variables to place a bg color on side news announcement items */
+/* News  */
+/* Not sure all these color settings are necessary
+$u-ArticleListItem__label--type--color:;
+$u-ArticleListItem__label--dateline__posted--color:;
+$u-ArticleListItem__label--dateline__postedDate--color:f; */
+/* LATEST Moved to Module Basic above
+$u-NewsList__itemContainer--margin: 1em 0;
+$u-NewsList__item--background: transparent;
+$u-NewsList__item--padding: 0; */
+/*	Search
+	------ */
+/*	Up until this point, the search box will be positioned
+	over the masthead, so as not to overlap it. This point
+	depends on how wide the site masthead is. Keep increasing it
+	until the search box no longer overlaps the masthead.
+*/
+/*	Mobile search colors
+	-------------------- */
+/*	Mobile menu colors
+	------------------ */
+/* $MenuBtnColor--activated: #000; */
+/*	Mobile search and menu colors
+	----------------------------- */
+/* The background color of a button, when activated */
+/*	Mobile search colors
+	-------------------- */
+/* The background of the "Vassar College" area */
+/* The background of the search and menu buttons */
+/* The color of the search icon and Menu text */
+/* The color of the space between search and menu */
+/* Don't modify these */
+/*	COLOR
+	===== */
+/* line 12, ../sass/color.scss */
+a {
+  color: #04afca; }
+
+/* line 15, ../sass/color.scss */
+a:visited {
+  color: #76910c; }
+
+/* line 18, ../sass/color.scss */
+a:visited:hover,
+a:hover {
+  color: #db6625; }
+
+/* line 22, ../sass/color.scss */
+a:visited:active,
+a:active {
+  color: #000; }
+
+/* line 26, ../sass/color.scss */
+body {
+  position: relative;
+  background-image: url(../images/css/bg-stripes.gif), url(../images/css/bg-stripe-tile.jpg);
+  position: relative;
+  background-repeat: no-repeat, repeat;
+  background-position: bottom left, top; }
+
+/* line 34, ../sass/color.scss */
+body:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 1em solid transparent;
+  border-top: 1em solid #333;
+  border-left: 1em solid #333; }
+
+/* line 44, ../sass/color.scss */
+html {
+  padding-bottom: 18%;
+  background: #333 url(../images/css/bg-footer-art.jpg) no-repeat;
+  background-size: 75%;
+  background-position: 20% 100%; }
+
+/* line 52, ../sass/color.scss */
+.galleria-info-text a,
+.galleria-info-text a:visited {
+  color: #94E4FF; }
+
+/* line 56, ../sass/color.scss */
+.galleria-info-text a:hover,
+.galleria-info-text a:visited:hover {
+  color: #c33600; }
+
+/* line 62, ../sass/color.scss */
+.Module--filmStudents {
+  border-top: 1px solid #ccc;
+  padding-top: 1em;
+  transition: all 0.5s ease; }
+/* line 67, ../sass/color.scss */
+.Module--filmStudents:hover {
+  opacity: .6; }
+/* line 70, ../sass/color.scss */
+.Module--filmStudents .u-Figure__caption {
+  color: #000; }
+
+/* line 74, ../sass/color.scss */
+.Module__name {
+  border-bottom: 2px solid #eee;
+  padding-bottom: .5em; }
+
+/* line 79, ../sass/color.scss */
+.u-ArticleNavGroup__navButton--archive:hover,
+.u-ArticleNavGroup__navButton--archive:visited:hover {
+  color: #fff; }
+
+/* line 84, ../sass/color.scss */
+.u-lContent a {
+  border-bottom: 1px solid #eee; }
+
+/* line 87, ../sass/color.scss */
+.u-lHeader {
+  border: none;
+  background: none; }
+
+/* line 92, ../sass/color.scss */
+.u-lMain {
+  background: #fff;
+  position: relative;
+  z-index: 2; }
+
+/* line 97, ../sass/color.scss */
+.u-Masthead__siteName--link,
+.u-Masthead__siteName--link:visited {
+  font-weight: bold;
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: -.05em; }
+
+@media (min-width: 37.5em) {
+  /* line 106, ../sass/color.scss */
+  .u-Masthead__siteName {
+    background: #000;
+    display: inline-block;
+    padding-left: 2em;
+    margin-left: -2em;
+    padding-right: 2em;
+    position: relative; }
+
+  /*	.u-Masthead__siteName:after {
+  		position: absolute;
+  		content: "";
+  		top: 0;
+  		bottom: 0;
+  		right: -3em;
+  		width: 3em;
+  		background: url(../images/css/corner.svg);
+  		background-size: cover;
+  	} */
+  /* line 124, ../sass/color.scss */
+  .u-Masthead__siteName--link,
+  .u-Masthead__siteName--link:visited {
+    color: #fff;
+    position: relative;
+    -webkit-transition: all 0.25s ease-out;
+    transition: all 0.25s ease-out; }
+
+  /* line 131, ../sass/color.scss */
+  .u-Masthead__siteName--link:hover,
+  .u-Masthead__siteName--link:visited:hover {
+    -webkit-filter: blur(5px);
+    filter: blur(5px);
+    color: #aaa; }
+
+  /* line 137, ../sass/color.scss */
+  .u-Masthead__siteName--link:before {
+    background: url(../images/css/masthead-colors.gif) repeat-x top left;
+    background-size: cover;
+    position: absolute;
+    width: .12em;
+    height: .72em;
+    content: "";
+    top: .4em;
+    left: -.15em; }
+
+  /* line 147, ../sass/color.scss */
+  .u-Masthead__siteName--link:hover:before {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%); } }
+/* line 152, ../sass/color.scss */
+.u-Masthead__vassar--link,
+.u-Masthead__vassar--link:visited {
+  color: #aaa; }
+
+/* line 156, ../sass/color.scss */
+.u-Masthead__vassar--link:hover {
+  color: #fff; }
+
+/* line 160, ../sass/color.scss */
+.u-NavSite__item,
+.u-NavSite__item:visited {
+  color: #000; }
+
+/* line 164, ../sass/color.scss */
+.u-NavSite__item:hover {
+  color: #db6625; }
+
+/* line 168, ../sass/color.scss */
+.u-Search {
+  border: 2px solid #000; }
+
+@media (min-width: 37.5em) {
+  /* line 174, ../sass/color.scss */
+  .u-pageHome .u-lMain:before {
+    content: "";
+    position: absolute;
+    height: 1em;
+    width: 100%;
+    background-color: #fff;
+    left: 0;
+    top: -1em;
+    z-index: 2;
+    border-top: 4px solid #ccc; }
+
+  /* line 186, ../sass/color.scss */
+  .u-Masthead__siteName:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 0;
+    width: 0;
+    left: 100%;
+    border: 1.1em solid transparent;
+    border-top: 1.1em solid #000;
+    border-left: 1.1em solid #000; }
+
+  /* line 198, ../sass/color.scss */
+  .u-NavSite__item.u-NavSite__item--isCurrent,
+  .u-NavSite__item.u-NavSite__item--isCurrent:visited,
+  .u-NavSite__item:hover,
+  .u-NavSite__item:visited:hover {
+    background: #000;
+    color: #fff;
+    padding-left: .25em; } }
+@media (min-width: 50em) {
+  /* line 209, ../sass/color.scss */
+  .u-lMain:before {
+    height: 2em;
+    top: -2em; } }
+@media (min-width: 62.5em) {
+  /* line 216, ../sass/color.scss */
+  .u-Masthead__siteName:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 0;
+    width: 0;
+    left: 100%;
+    border: 1.2em solid transparent;
+    border-top: 1.2em solid #000;
+    border-left: 1.2em solid #000; } }
+/* ---- */
+/* line 232, ../sass/color.scss */
+.u-lMain {
+  margin-top: 1em;
+  border-top: 4px solid #8a0;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); }
+
+@media (min-width: 37.5em) {
+  /* line 238, ../sass/color.scss */
+  .u-lMain {
+    padding-top: 8em; } }
+@media (min-width: 62.5em) {
+  /* line 243, ../sass/color.scss */
+  .u-lMain {
+    width: 78%; } }
+/* line 249, ../sass/color.scss */
+.u-lMain:before {
+  display: none; }
+
+/* line 253, ../sass/color.scss */
+.u-lHeader {
+  z-index: 999; }
+
+/* line 257, ../sass/color.scss */
+h1.u-Masthead__siteName {
+  z-index: 99; }
+
+/*	Module basics
+	============= */
+/* line 266, ../sass/color.scss */
+.Module__list,
+.Module__subList {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+/*	Festivals
+	========= */
+/* line 280, ../sass/color.scss */
+.Module__headerLink,
+.Module__headerLink:visited {
+  color: #000;
+  border: none !important; }
+
+/* line 285, ../sass/color.scss */
+.modulesArea {
+  /*	.Module__list > .Module__listItem:last-child {
+  		font: bold .8em $sans-serif;
+  		text-transform: uppercase;
+  		letter-spacing: .1em;
+  		margin-top: 1.4em;
+  	} */ }
+  /* line 286, ../sass/color.scss */
+  .modulesArea {
+    margin-top: 1.4em; }
+  /* line 289, ../sass/color.scss */
+  .modulesArea .Module__listItem {
+    border-top: 1px solid #eee;
+    padding-top: .25em;
+    margin-top: .25em; }
+  /* line 295, ../sass/color.scss */
+  .modulesArea .modulesArea__row {
+    overflow: hidden; }
+  @media (min-width: 50em) {
+    /* line 299, ../sass/color.scss */
+    .modulesArea .Module--halfWidth {
+      width: 50%; }
+    /* line 302, ../sass/color.scss */
+    .modulesArea .Module--halfWidth:nth-child(1) {
+      float: left;
+      padding-right: 3%; }
+    /* line 306, ../sass/color.scss */
+    .modulesArea .Module--halfWidth:nth-child(2) {
+      float: right;
+      padding-left: 3%; } }
+  /* line 311, ../sass/color.scss */
+  .modulesArea .Module {
+    margin-bottom: 1.4em; }
+  /* line 320, ../sass/color.scss */
+  .modulesArea .Module__subList {
+    text-transform: none;
+    letter-spacing: normal;
+    font-weight: normal;
+    font-size: .85em;
+    margin-top: .5em;
+    border-left: 2px solid #eee;
+    padding-left: .75em; }
+  /* line 329, ../sass/color.scss */
+  .modulesArea .Module__subList .Module__listItem {
+    font-weight: bold;
+    border-top: 1px solid #eee; }
+  /* line 333, ../sass/color.scss */
+  .modulesArea .Module__subList .Module__listItem:first-child {
+    border: none; }
+  /* line 336, ../sass/color.scss */
+  .modulesArea .Module__title {
+    font-weight: bold;
+    display: block;
+    line-height: 1.2; }
+  /* line 341, ../sass/color.scss */
+  .modulesArea .Module__desc {
+    font-style: italic;
+    display: block;
+    /* margin-top: -.25em; */
+    color: #888; }

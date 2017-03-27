@@ -1,0 +1,161 @@
+/*	CONFIG
+	====== */
+/*	TYPOGRAPHY
+	========== */
+/*	LAYOUT
+	====== */
+/* Site breakpoints */
+/* 400px divided by 16px */
+/* 600px divided by 16px */
+/* 800px divided by 16px */
+/* 1000px divided by 16px */
+/* The padding on u-lHeader, u-lMain, u-lFooter, and u-NavSite. */
+/* COLOR
+	====== */
+/* Basic link colors - these colors also affect the Google Search result link colors */
+/* tint($linkColorVisited, 50%) or shade($linkColorVisited, 50%) can be used to lighten or darken hue */
+/* MODULES
+	======== */
+/* Bios */
+/* Breadcrumbs  */
+/* Footer */
+/* Images */
+/*	Google search results  */
+/* Currently being overridden by something in Google's default CSS */
+/* The numbers that represent pages of search results */
+/* Nav */
+/* level 3 covers Level 3 and up. */
+/* LATEST Modules basic */
+/* Use these variables to place a bg color on side news announcement items */
+/* News  */
+/* Not sure all these color settings are necessary
+$u-ArticleListItem__label--type--color:;
+$u-ArticleListItem__label--dateline__posted--color:;
+$u-ArticleListItem__label--dateline__postedDate--color:f; */
+/* LATEST Moved to Module Basic above
+$u-NewsList__itemContainer--margin: 1em 0;
+$u-NewsList__item--background: transparent;
+$u-NewsList__item--padding: 0; */
+/*	Search
+	------ */
+/*	Up until this point, the search box will be positioned
+	over the masthead, so as not to overlap it. This point
+	depends on how wide the site masthead is. Keep increasing it
+	until the search box no longer overlaps the masthead.
+*/
+/*	Mobile search colors
+	-------------------- */
+/*	Mobile menu colors
+	------------------ */
+/* $MenuBtnColor--activated: #000; */
+/*	Mobile search and menu colors
+	----------------------------- */
+/* The background color of a button, when activated */
+/*	Mobile search colors
+	-------------------- */
+/* The background of the "Vassar College" area */
+/* The background of the search and menu buttons */
+/* The color of the search icon and Menu text */
+/* The color of the space between search and menu */
+/* Don't modify these */
+/*	LAYOUT
+	====== */
+/* line 6, ../sass/layout.scss */
+html {
+  min-height: 100%;
+  /*	Ordinarily, the html element does not actually go to the end
+  	of the browser window. If you apply a background-image or
+  	inset box shadow to html, it will stop short of the end of
+  	the window if there isn't enough content, as sometimes
+  	is the situation on homepages.
+  
+  	min-height: 100% ensures that the html element always touches
+  	the end of the window no matter how much content there is.
+  */ }
+
+/* line 20, ../sass/layout.scss */
+.noSidebar .u-lAside {
+  display: none; }
+/* line 23, ../sass/layout.scss */
+.noSidebar .u-lContent {
+  width: 100%; }
+
+@media (min-width: 37.5em) {
+  /* line 29, ../sass/layout.scss */
+  .u-lHeader {
+    float: left;
+    width: 30%; }
+
+  /* line 33, ../sass/layout.scss */
+  .u-lAside {
+    width: 50%; } }
+@media (min-width: 50em) {
+  /* line 38, ../sass/layout.scss */
+  body {
+    padding-right: 2%; }
+
+  /* line 41, ../sass/layout.scss */
+  .u-NavSite {
+    width: 27%; }
+
+  /* line 44, ../sass/layout.scss */
+  .u-lContent {
+    width: 74%;
+    float: left; }
+
+  /* line 48, ../sass/layout.scss */
+  .u-lAside {
+    width: 25%;
+    float: right; }
+
+  /* line 52, ../sass/layout.scss */
+  .u-lMain {
+    width: 71%;
+    padding-top: 7em; }
+
+  /* line 56, ../sass/layout.scss */
+  .u-lHeader {
+    width: 27%; }
+
+  /* line 59, ../sass/layout.scss */
+  .u-Search {
+    z-index: 200;
+    top: 2em;
+    right: 2em; } }
+@media (min-width: 62.5em) {
+  /* line 66, ../sass/layout.scss */
+  .u-lHeader {
+    width: 20%; }
+
+  /* line 69, ../sass/layout.scss */
+  .u-biosInner .u-NavSite, .u-NavSite {
+    width: 20%; }
+
+  /* line 72, ../sass/layout.scss */
+  .u-biosInner .u-lMain, .u-lMain {
+    width: 79%; }
+
+  /* line 75, ../sass/layout.scss */
+  .u-Search {
+    top: 3em;
+    right: 4.7%;
+    width: 17.2%; }
+
+  /* line 81, ../sass/layout.scss */
+  .u-pageInner .u-lMain {
+    /* margin-top: -4em; */ }
+  /* line 85, ../sass/layout.scss */
+  .u-pageInner .u-pageHome .u-lMain:before {
+    top: 1px;
+    height: 1px; } }
+/*	Bios
+	---- */
+/*	Navigation
+	---------- */
+/* line 102, ../sass/layout.scss */
+.u-NavSite__level--1 .u-NavSite__item {
+  padding: .25em 0; }
+
+/* line 108, ../sass/layout.scss */
+.u-pageHome .Module--contact {
+  display: none; }

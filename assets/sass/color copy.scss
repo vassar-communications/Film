@@ -1,0 +1,250 @@
+@import "_imports";
+
+
+/*	COLOR
+	===== */
+
+$imagesFolder: "http://localhost:8888/chsilverman/english/assets/images/css";
+$imagesFolder: "../images/css";
+
+a {
+	color: #04afca;
+}
+a:visited {
+	color: #76910c;
+}
+a:visited:hover,
+a:hover {
+	color: #db6625;
+}
+a:visited:active,
+a:active {
+	color: #000;
+}
+.u-lContent a {
+	border-bottom: 1px solid #eee;
+}
+
+html {
+	/* background: url(#{$imagesFolder}/background.jpg) repeat-x; */
+	/* background: #333 url(#{$imagesFolder}/rainbow_gray.gif) no-repeat top right; */
+	background-attachment: fixed;
+	padding-bottom: 18%;
+	background-image: url(#{$imagesFolder}/rainbow_gray.gif), url(#{$imagesFolder}/bg-footer-art.jpg);
+	background-repeat: no-repeat, no-repeat;
+	background-attachment: fixed, scroll;
+	background-position: top right, 20% 100%;
+	background-size: 50%, 75%;
+}
+body {
+	overflow: hidden;
+	background: #f6f2ed url(#{$imagesFolder}/rainbow_white.gif) no-repeat top right;
+	background-attachment: fixed;
+	background-size: 50%;
+}
+.u-lHeader {
+	background: #000 url(#{$imagesFolder}/rainbow_black.gif) top right no-repeat;
+	background-attachment: fixed;
+	position: relative;
+	background-size: 50%;
+}
+.u-lMain {
+	background: #fff;
+	position: relative;
+	z-index: 2;
+}
+@media (min-width: $small) {
+	.u-lMain {
+		border-top: 4px solid #ccc;	
+	}
+	.u-pageHome {
+		.u-lMain:before {
+			content: "";
+			position: absolute;
+			height: 1em;
+			width: 100%;
+			background-color: #fff;
+			left: 0;
+			top: -1em;
+			z-index: 2;
+			border-top: 4px solid #ccc;
+		}
+	}
+}
+@media (min-width: $medium) {
+	.u-lMain:before {
+		height: 2em;
+		top: -2em;
+	}
+}
+
+
+/*	Modules
+	------- */
+
+.Module__name {
+    border-bottom: 2px solid #eee;
+    padding-bottom: .5em;
+}
+
+
+/*	Masthead
+	-------- */
+
+.u-Masthead__siteName--link,
+.u-Masthead__siteName--link:visited {
+	color: #fff;
+	position: relative;
+    -webkit-transition: all 0.25s ease-out;
+    transition: all 0.25s ease-out;
+}
+.u-Masthead__siteName--link:hover,
+.u-Masthead__siteName--link:visited:hover {
+	-webkit-filter: blur(5px);
+	filter: blur(5px);
+	color: #aaa;
+}
+/*
+.u-Masthead__siteName--link:before {
+	background: url(#{$imagesFolder}/masthead-colors.gif) repeat-x top left;
+	background-size: contain;
+	position: absolute;
+	width: .5em;
+	height: .72em;
+	content: "";
+	top: .4em;
+	left: -.6em;
+}
+*/
+
+.u-Masthead__siteName--link:before {
+	background: url(#{$imagesFolder}/masthead-colors.gif) repeat-x top left;
+    background-size: cover;
+    position: absolute;
+    width: .12em;
+    height: .72em;
+    content: "";
+    top: .4em;
+    left: -.15em;
+}
+
+
+.u-Masthead__siteName--link:hover:before {
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+}
+.u-Masthead__vassar--link,
+.u-Masthead__vassar--link:visited {
+	color: #aaa;
+}
+.u-Masthead__vassar--link:hover {
+	color: #fff;
+}
+
+
+
+/*	Navigation
+	---------- */
+
+.u-NavSite__item,
+.u-NavSite__item:visited {
+	color: #000;
+}
+.u-NavSite__item:hover {
+	color: #db6625;
+}
+
+
+
+/*	This fills in the area under u-lMain if nav
+	is longer than main-area content. */
+
+
+@media (min-width: $small) {
+	.u-NavSite {
+		position: relative;
+	}
+	.u-NavSite:after {
+	    content: "";
+	    position: absolute;
+	    height: 100%;
+	    background-color: #fff;
+	    top: 0;
+	    left: 100%;
+	    z-index: 1;
+	}
+}
+@media (min-width: $medium) {
+	.u-NavSite:after {
+		width: 410%;
+	}
+}
+@media (min-width: $large) {
+	.u-NavSite:after {
+		width: 395%;
+	}
+}
+
+
+/*	News
+	---- */
+
+.u-ArticleNavGroup__navButton--archive:hover,
+.u-ArticleNavGroup__navButton--archive:visited:hover {
+	color: #fff;
+}
+
+/*	HP
+	== */
+
+.u-pageHome {
+	.u-lHeader {
+		height: 12em;
+		border: 1px solid rgba(255,255,255,.2);
+
+		background-image: url(#{$imagesFolder}/rainbow_brite.png), url(#{$imagesFolder}/filmstrip.jpg);
+		background-repeat: no-repeat, no-repeat;
+		background-attachment: fixed, scroll;
+		background-position: top right, bottom left;
+		background-size: 50%, auto;
+	}
+
+
+}
+.Module--filmStudents {
+	& {
+		border-top: 1px solid #ccc;
+		padding-top: 1em;
+		transition: all 0.5s ease;	
+	}
+	&:hover {
+		opacity: .6;
+	}
+	.u-Figure__caption {
+		color: #000;
+	}
+}
+
+.galleria-info-text a,
+.galleria-info-text a:visited {
+	color: #94E4FF;
+}
+.galleria-info-text a:hover,
+.galleria-info-text a:visited:hover {
+	color: #c33600;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
