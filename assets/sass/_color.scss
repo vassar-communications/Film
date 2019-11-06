@@ -25,12 +25,12 @@ a:active {
 }
 body {
 	position: relative;
-
 	background-image: url(../images/css/bg-stripes.gif), url(../images/css/bg-stripe-tile.jpg);
 	position: relative;
 	background-repeat: no-repeat, repeat;
 	background-position: bottom left, top;
 }
+
 body:before {
 	content: "";
 	position: absolute;
@@ -48,6 +48,48 @@ html {
 	background-size: 75%;
 	background-position: 20% 100%;
 }
+
+.gf- body
+{
+    background-image: none;
+    background-color: #333;
+}
+
+.gf- .PageContent
+{
+	position: relative;
+	background-image: url(../images/css/bg-stripes.gif), url(../images/css/bg-stripe-tile.jpg);
+	position: relative;
+	background-repeat: no-repeat, repeat;
+	background-position: bottom left, top;
+    margin-top: 2%;
+}
+
+.gf- .u-lContent
+{
+    padding-right: 5%;
+}
+
+.gf- .u-Masthead__siteName
+{
+    margin-top: .4em;
+}
+
+.gf- body:before {
+	content: none;
+}
+
+.gf- .PageContent:before
+{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	border: 1em solid transparent;
+	border-top: 1em solid #333;
+	border-left: 1em solid #333;
+}
+
 
 .galleria-info-text a,
 .galleria-info-text a:visited {
